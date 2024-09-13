@@ -6,7 +6,7 @@ const Footer = () => {
     const [upcomingEvents, setUpcomingEvents] = useState([]);
 
     useEffect(() => {
-        // Simulate fetching data from an API or database
+        // fetching data from an API or database
         setRecentPosts([
             { id: 1, title: 'Annual Temple Festival', link: '/events/1' },
             { id: 2, title: 'Meditation Workshop', link: '/events/2' },

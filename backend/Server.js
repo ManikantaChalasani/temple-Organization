@@ -16,27 +16,27 @@ app.post('/confirm-donation', async (req, res) => {
     console.log('Incoming donation request:', { amount, name, email, transactionId });
 
     try {
-        // Create a transporter object using the default SMTP transport
+        // Create a transporter object
         let transporter = nodemailer.createTransport({
-            service: 'gmail', // Use your email service provider
+            service: 'gmail',
             auth: {
-                user: 'chalasanimanikanta08@gmail.com', // Your email
-                pass: 'vvux dysm kofp jrrf' // Your email password
+                user: 'chalasanimanikanta08@gmail.com',
+                pass: 'vvux dysm kofp jrrf' 
             }
         });
 
         // Define the email options
         let mailOptions = {
-            from: 'chalasanimanikanta08@gmail.com', // Sender address
-            to: email, // List of receivers
-            subject: 'Donation Receipt - Temple', // Subject line
+            from: 'chalasanimanikanta08@gmail.com', 
+            to: email, // rec
+            subject: 'Donation Receipt - Temple', 
             text: `Thank you for your donation!\n\n
                    Details:\n
                    Amount: ${amount}\n
                    Name: ${name}\n
                    Transaction ID: ${transactionId}\n
                    We appreciate your support!\n
-                   Temple Management` // Plain text body
+                   Temple Management` 
         };
 
         // Send the email
