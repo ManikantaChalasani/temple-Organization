@@ -1,4 +1,1 @@
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200np
+/* /index.html 200
