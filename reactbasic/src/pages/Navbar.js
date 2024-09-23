@@ -9,6 +9,8 @@ const Navbar = () => {
     };
 
     return (
+        
+        
         <div className='navbar'>
             <button className="menu-toggle" onClick={toggleMenu}>
                 ☰

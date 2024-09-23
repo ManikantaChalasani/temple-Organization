@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import ImageSlider from '../Main/ImageSlider';
 import Volunteers from '../Main/Volunteers';
 import volunteersData from '../Main/VolunteerData.json';
+import TempleBOX from '../Main/TempleBox';
 
 const Home = () => {
     const [volunteers, setVolunteers] = useState([]);
@@ -11,7 +11,7 @@ const Home = () => {
     }, []);
     return (
         <div className="home">
-            <ImageSlider />
+            <TempleBOX />
             <Volunteers volunteers={volunteers} />
         </div>
     );

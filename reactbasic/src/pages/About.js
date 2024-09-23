@@ -11,7 +11,7 @@ const AboutUs = () => {
             <section className="temple-history">
                 <h2>Our History</h2>
                 <div className="content">
-                    <img src="/assets/images/temple.jpg" alt="Nagendra Swami Temple" className="temple-image" />
+                    <img src="/temp22.gif" alt="Nagendra Swami Temple" className="temple-image" />
                     <div className="text">
                         <p>Founded in ancient times, the Nagendra Swami Temple has been a center of spiritual enlightenment and community gathering for generations. The temple's history is rich with cultural heritage and spiritual significance, attracting devotees from far and wide.</p>
                         <p>With its serene environment and beautiful architecture, the temple continues to be a beacon of peace and spirituality in the community.</p>
@@ -22,7 +22,7 @@ const AboutUs = () => {
             <section className="nagendra-swami">
                 <h2>About Nagendra Swami</h2>
                 <div className="content">
-                    <img src="/assets/images/nagendra-swami.jpg" alt="Nagendra Swami" className="swami-image" />
+                    <img src="/NAIMaG.gif" alt="Nagendra Swami" className="swami-image" />
                     <div className="text">
                         <p>Nagendra Swami is revered for his profound wisdom and spiritual guidance. His teachings emphasize compassion, humility, and the pursuit of inner peace. The temple stands as a testament to his legacy, continuing to inspire and uplift the community.</p>
                         <p>Under his guidance, many have found solace and a deeper connection with the divine.</p>
@@ -49,22 +49,22 @@ const AboutUs = () => {
                 <h2>Meet Our Team</h2>
                 <div className="team-members">
                     <div className="team-member">
-                        <img src="/assets/images/team-member1.jpg" alt="Priest" className="team-image" />
+                        <img src="/manikantapic.jpg" alt="Priest" className="team-image" />
                         <h3>Priest Name</h3>
                         <p>Head Priest</p>
                     </div>
                     <div className="team-member">
-                        <img src="/assets/images/team-member2.jpg" alt="Manager" className="team-image" />
+                        <img src="/manikantapic.jpg" alt="Manager" className="team-image" />
                         <h3>Manager Name</h3>
                         <p>Temple Manager</p>
                     </div>
                     <div className="team-member">
-                        <img src="/assets/images/team-member3.jpg" alt="Coordinator" className="team-image" />
+                        <img src="/manikantapic.jpg" alt="Coordinator" className="team-image" />
                         <h3>Coordinator Name</h3>
                         <p>Volunteer Coordinator</p>
                     </div>
                     <div className="team-member">
-                        <img src="/assets/images/team-member4.jpg" alt="Organizer" className="team-image" />
+                        <img src="/manikantapic.jpg" alt="Organizer" className="team-image" />
                         <h3>Organizer Name</h3>
                         <p>Event Organizer</p>
                     </div>

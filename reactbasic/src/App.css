@@ -4,36 +4,18 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  background-color:#F1F8E8;
-  padding: 20px;
+header {
+  
+  padding: 10px;
   text-align: center;
   overflow: hidden;
-  position: relative;
   width: 100%;
-}
-
-.scrolling-text {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-left 20s linear infinite;
-}
-
-@keyframes scroll-left {
-  from {
-      transform: translateX(100%);
-  }
-  to {
-      transform: translateX(-100%);
-  }
-}
-
-.scrolling-text span {
-  font-size: 2em;
+  color: green;
+  font-size: 1.5em;
   font-weight: bold;
-  color:#00246B;
-  text-shadow: light gainsboro;
 }
+
+
 
 
 /* Navbar container styling 
@@ -100,17 +82,18 @@ body{
 }*/
 
 .navbar {
-  background-color:green;
+  background-color:#cf0234;
   padding: 12.5px 20px;
   display: flex;
   justify-content: space-between; /* Ensure space between items */
   align-items: center; /* Center items vertically */
   border-bottom: 3px solid lightgray;
+  
 }
 
 .navbar nav {
   display: flex; 
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-start; /* Align items to the right */
   align-items: center; /* Center items vertically */
   flex: 1; /* Take available space */
 }
@@ -131,8 +114,8 @@ body{
 }
 
 .navbar nav a.active {
-  color: #b2dfdb;
-  border-bottom: 2px solid #b2dfdb;
+  color: #f392a0;
+  border-bottom: 2px solid #f392a0;
 }
 
 .navbar nav a::after {
@@ -163,19 +146,19 @@ body{
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack items vertically */
-    align-items: flex-end; /* Align items to the right */
+    align-items:flex-start; /* Align items to the right */
   }
 
   .menu-toggle {
     display: block; /* Show menu button on smaller screens */
     margin-bottom: 10px; /* Space between button and nav links */
-    align-self: flex-end; /* Align button to the right */
+    align-self: flex-start; /* Align button to the right */
   }
 
   .navbar nav {
     display: none; /* Hide nav links by default */
     flex-direction: column; /* Stack links vertically */
-    align-items: flex-end; /* Align links to the right */
+    align-items: flex-start; /* Align links to the right */
     width: 100%; /* Full width for links */
   }
 
@@ -188,12 +171,12 @@ body{
     font-size: 1em; /* Slightly smaller text */
     width: auto; /* Automatic width for links */
     padding: 10px 0; /* Padding for touch targets */
-    text-align: right; /* Align text to the right */
+    text-align:left ; /* Align text to the right */
     box-sizing: border-box; /* Include padding in width */
   }
 
   .navbar nav a.active {
-    color: #b2dfdb;
+    color: #f392a0;
     border-bottom: none; /* Remove bottom border for active state in mobile */
   }
 }
@@ -286,7 +269,8 @@ body{
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  background: linear-gradient(90deg, #e0f7fa, #fff); /* Soft gradient background */
+  background: linear-gradient(90deg, #f392a0,#d4edda); /* Soft gradient background */
+  
   padding: 20px 0; /* Add some padding to the top and bottom */
 }
 
@@ -294,7 +278,7 @@ body{
 .volunteers-scroll {
   display: inline-flex;
   align-items: center;
-  animation: scroll-horizontal 30s linear infinite; /* Adjust the duration for a slower scroll */
+  animation: scroll-horizontal 20s linear infinite; /* Adjust the duration for a slower scroll */
 }
 
 /* Individual volunteer card */
@@ -319,7 +303,7 @@ body{
   width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 2px solid #00796b; /* Border color to match theme */
+  border: 2px solid #cf0234; /* Border color to match theme */
   transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
@@ -330,24 +314,24 @@ body{
 /* Volunteer information */
 .volunteer-info {
   margin-top: 15px;
-  color: #004d40; /* Text color matching the theme */
+  color:#cf0234; /* Text color matching the theme */
 }
 
 .volunteer-info h3 {
   font-size: 1.2em;
-  color: #00796b; /* Volunteer name color */
+  color:#cf0234; /* Volunteer name color */
   margin-bottom: 5px;
 }
 
 .volunteer-info p {
   font-size: 0.9em;
-  color: #00796b; /* Volunteer contact color */
+  color: #cf0234; /* Volunteer contact color */
 }
 
 /* Keyframes for scrolling animation */
 @keyframes scroll-horizontal {
   0% {
-      transform: translateX(60%);
+      transform: translateX(20%);
   }
   100% {
       transform: translateX(-50%);
@@ -893,17 +877,16 @@ section p {
 .gallery-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
+  object-fit: cover; 
   display: block;
   transition: transform 0.3s ease;
-  border-radius: 8px; /* Match the border-radius of the container */
+  border-radius: 8px; 
 }
 
 .image-item:hover .gallery-image {
   transform: scale(1.1);
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .gallery-header h1 {
     font-size: 2rem;
@@ -927,3 +910,59 @@ section p {
     font-size: 0.9rem;
   }
 }
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #f392a0,#d4edda)
+
+}
+
+.content-right {
+  width: 50%;
+  font-size: 20px;
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  
+
+}
+
+.scrolling-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.left img,
+.right img {
+  max-width: 50px;
+  height: auto;
+}
+
+.center-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+}
+
+audio {
+  width: 100px; 
+}
+

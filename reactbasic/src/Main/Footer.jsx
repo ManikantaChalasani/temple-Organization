@@ -23,10 +23,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <div className="footer-section about-section">
-                    <h3>About Us</h3>
-                    <p>We are dedicated to fostering community spirit and providing a serene place for spiritual enrichment and gatherings.</p>
-                </div>
+                
                 <div className="footer-section links-section">
                     <h3>Quick Links</h3>
                     <ul>
@@ -37,12 +34,7 @@ const Footer = () => {
                         <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
                     </ul>
                 </div>
-                <div className="footer-section contact-section">
-                    <h3>Contact Us</h3>
-                    <p>NagendraSwami Tempel,</p>
-                    <p>Phone: 9999999999</p>
-                    <p>Email: nagendraswami@temple.com</p>
-                </div>
+               
                 <div className="footer-section dynamic-content-section">
                     <h3>Recent Posts</h3>
                     <ul>
@@ -75,13 +67,7 @@ const Footer = () => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="footer-section newsletter-section">
-                    <h3>Subscribe to our Newsletter</h3>
-                    <form className="newsletter-form">
-                        <input type="email" placeholder="Enter your email" className="newsletter-input" />
-                        <button type="submit" className="newsletter-button">Subscribe</button>
-                    </form>
-                </div>
+                
             </div>
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} Temple Name. All rights reserved.</p>
